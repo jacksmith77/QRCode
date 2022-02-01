@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* font-family: 'Outfit', sans-serif; */
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lgray: hsl(212, 45%, 89%); 
+    --gblue: hsl(220, 15%, 55%); 
+    --dblue: hsl(218, 44%, 22%);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--lgray);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .card {
+        background-color: var(--white);
+        width: 23em;
+        height: 35em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 1.5em;
+        box-shadow: 1px 1px 3px var(--gblue);
+        transition: transform .4s ease-in;
+    }
+
+
+    .card:hover {
+        box-shadow: 1.5px 1.5px 10px var(--gblue);
+        transform: scale(1.1);
+    }
+
+
+    img {
+        width: 21em;
+        margin-top: 1em;
+        border-radius: 1em;
+    }
+
+
+    h2 {
+        color: var(--dblue);
+        font-weight: 700;
+        font-size: 1.6em;
+        padding: .5em;
+        margin: .5em 1em 0 1em;
+    }
+
+
+    p {
+        font-size: 1.1em;
+        font-weight: 400;
+        color: var(--gblue);
+        margin: .3em 1.8em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        background-color: var(--white);
+        width: 20em;
+        height: 33em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 1.5em;
+        box-shadow: 1px 1px 3px var(--gblue);
+        transition: transform .4s ease-in;
+    }
+
+
+    .card:hover {
+        box-shadow: 1.5px 1.5px 10px var(--gblue);
+        transform: scale(.3);
+    }
+
+
+    img {
+        width: 17em;
+        margin-top: 1em;
+        border-radius: 1em;
+    }
+
+
+    h2 {
+        color: var(--dblue);
+        font-weight: 700;
+        font-size: 1.6em;
+        padding: .5em;
+        margin: .5em 1em 0 1em;
+    }
+
+
+    p {
+        font-size: 1.1em;
+        font-weight: 400;
+        color: var(--gblue);
+        margin: .3em 1.8em;
+        text-align: center;
+    }
+}
